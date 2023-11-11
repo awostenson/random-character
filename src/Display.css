@@ -1,0 +1,25 @@
+.Display {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .8);
+  padding-top: 0%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Display-padding {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+
+.Display-button .Display {
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.MuiButtonBase-root.Mui-selected {
+  color: green;
+}

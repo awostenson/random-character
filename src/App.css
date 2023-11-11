@@ -1,16 +1,20 @@
+:root {
+  --background-url: url("http://photoeverywhere.co.uk/britain/ukwild/green_ferns3922.JPG");
+}
+
 .App {
-  text-align: center;
+  background-color: #16181a;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-center {
+  margin-left: 20%;
+  margin-right:20%;
+  background-image: var(--background-url);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .App-header {
@@ -36,3 +40,14 @@
     transform: rotate(360deg);
   }
 }
+
+body { margin: 0 }
+  .row, .col { overflow: hidden; position: absolute; }
+  .row { left: 0; right: 0; }
+  .col { top: 0; bottom: 0; }
+  .scroll-x { overflow-x: auto; }
+  .scroll-y { overflow-y: auto; }
+
+  .header.row { height: 30%; top: 0; }
+  .body.row { top: 30%; bottom: 50px; }
+  .footer.row { height: 50px; bottom: 0; }
