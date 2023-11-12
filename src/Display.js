@@ -4,7 +4,8 @@ import './Figurehead.css';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import GenerateNewButton from './GenerateNewButton.js';
-import backgroundImages from "./backgroundImages.json"
+import backgroundImages from "./backgroundImages.json";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import {createCharacter, displayCharacter, displayWorld, displayBackstory} from './CharacterCreationService';
 
 class Display extends React.Component {
@@ -17,8 +18,12 @@ class Display extends React.Component {
   }
 
   render() {
+    theme = this.state.character.character ?
+      changeTheme(this.state.character.character.favColor.hex) :
+      changeTheme('#f44336');
+    console.log(theme.palette.primary);
     return (
-      <div>
+      <ThemeProvider theme={theme}>
         <div element class="Display-padding Display">
           <Tabs 
             value={this.state.tabValue} 
@@ -41,13 +46,12 @@ class Display extends React.Component {
             />
           </div>
         </div>
-      </div>
+      </ThemeProvider>
     );
   }
 
   display() {
     this.props.setBackground(backgroundImages[this.state.character.world.geography.borders]);
-    this.props.changeTheme(this.state.character.character.favColor.hex);
     switch (this.state.tabValue) {
       case 0:
         return displayWorld(this.state.character);
@@ -59,6 +63,27 @@ class Display extends React.Component {
         return "It seems you've gotten lost."
     }
   }
+}
+
+var theme;
+
+function changeTheme(newPrimary) {
+  return createTheme({
+    palette: {
+      primary: {
+        light: '#757ce8',
+        main: newPrimary,
+        dark: '#002884', 
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#ff7961',
+        main: '#f44336',
+        dark: '#ba000d',
+        contrastText: '#000',
+      },
+    }
+  });
 }
   
 export default Display;

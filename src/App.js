@@ -2,14 +2,9 @@ import './App.css';
 import './Figurehead';
 import Figurehead from './Figurehead';
 import Display from './Display';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 function App() {
-  console.log("rendering. " + primaryColor);
-  theme = changeTheme(primaryColor);
-
   return (
-    <ThemeProvider theme={theme}>
       <div element class="App">
         <div element class="App-center">
           <div class="header row App-center">
@@ -18,39 +13,13 @@ function App() {
           <div class="body row scroll-y App-center">
             <Display 
             setBackground={changeBackground}
-            changeTheme={changeTheme}
             />
           </div>
           <div class="footer row App-center">
           </div>
         </div>
       </div>
-    </ThemeProvider>
   );
-}
-
-var primaryColor = '#757ce8';
-var theme = changeTheme(primaryColor)
-
-function changeTheme(newPrimary) {
-  primaryColor = newPrimary;
-
-  return createTheme({
-    palette: {
-      primary: {
-        light: '#757ce8',
-        main: primaryColor,
-        dark: '#002884', 
-        contrastText: '#fff',
-      },
-      secondary: {
-        light: '#ff7961',
-        main: '#f44336',
-        dark: '#ba000d',
-        contrastText: '#000',
-      },
-    }
-  });
 }
 
 function changeBackground(newBackground) {
