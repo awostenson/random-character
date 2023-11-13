@@ -22,7 +22,6 @@ class Display extends React.Component {
     theme = this.state.character.character ?
       changeTheme(this.state.character.character.favColor.hex) :
       changeTheme('#f44336');
-    console.log(theme.palette.primary);
     return (
       <ThemeProvider theme={theme}>
         <div element class="Display-padding Display">
