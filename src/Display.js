@@ -4,9 +4,10 @@ import './Figurehead.css';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import GenerateNewButton from './GenerateNewButton.js';
-import backgroundImages from "./backgroundImages.json";
+import backgroundImages from "./data/backgroundImages.json";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import {createCharacter, displayCharacter, displayWorld, displayBackstory} from './CharacterCreationService';
+import { createCharacter } from './CharacterCreationService';
+import { displayCharacter, displayWorld, displayBackstory } from './CharacterDisplayService';
 
 class Display extends React.Component {
   constructor(props) {
