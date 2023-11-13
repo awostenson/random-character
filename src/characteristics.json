@@ -72,7 +72,6 @@
   "hometown": {
     "size": [
       "the middle of nowhere",
-      "a nomadic group",
       "a religious settlement",
       "a small town",
       "a large town",
@@ -195,11 +194,11 @@
         "in a cave"
       ],
       "joinedFamily": [
-        "born",
-        "adopted from a deceased community member",
-        "left on the doorstep",
-        "found the grasp of a hungry creature as a newborn",
-        "emerged from the water fully formed"
+        "at birth",
+        "via adoption from a deceased community member",
+        "after being left mysteriously on the doorstep",
+        "after being found the grasp of a hungry creature as a newborn",
+        "after emerging from fully formed from a tree"
       ]
     },
     "childhood": {
@@ -217,7 +216,7 @@
       ],
       "special": [
         "met an old god in the place where a field met wild lands, and can still hear the song It was humming",
-        "kidnapped and raised by pirates before eventually returning to land as an adult",
+        "was kidnapped and raised by pirates before eventually returning to land as an adult",
         "stumbled into a cave of whispering stones in the deep mountains, but could never find it a second time",
         "claimed to be able to speak with deer",
         "saw an eye the size of two ships open under the water a day before a tsunami struck"
@@ -242,7 +241,7 @@
       "a locket that has been in the family for generations",
       "a sword that sings when it touches blood",
       "a pocket watch that points somewhere other than north",
-      "a portrait of a woman who speaks on rare occasions",
+      "a portrait of a woman who, on rare occasions, speaks",
       "a stuffed boar's head that looks alive in some lights",
       "the old family grimoire"
     ]

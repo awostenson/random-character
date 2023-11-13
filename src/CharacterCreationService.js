@@ -222,11 +222,11 @@ export function displayBackstory(character) {
   var pronouns = character.pronouns;
   return [
     "The character was born " + character.backstory.origin.birth +
-    ", and joined " + pronouns.their + " family when " + pronouns.they + 
-    " " + pronouns.were + " " + character.backstory.origin.joinedFamily + ". " + capitalize(pronouns.they) +
+    ", and joined " + pronouns.their + " family " + character.backstory.origin.joinedFamily +
+     ". " + capitalize(pronouns.they) +
     " " + pronouns.were + " " + pronouns.their + " parents' " + character.family.birthOrder + ".", 
     <br />, <br />,
-    capitalize(pronouns.their) + " family were " + character.family.prosperity + ", with the more influential of " + pronouns.their + " parents working as a " +
+    capitalize(pronouns.their) + " family was " + character.family.prosperity + ", with the more influential of " + pronouns.their + " parents working as a " +
     character.family.parentalOccupation + ". The character grew up hearing stories of how " +
     pronouns.their + " family was " + character.family.history + "." ,
     <br />, <br />,

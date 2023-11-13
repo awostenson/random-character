@@ -1,6 +1,6 @@
 .Display {
   text-align: center;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255);
   padding-top: 0%;
   padding-bottom: 5%;
   padding-left: 5%;
@@ -8,6 +8,7 @@
 }
 
 .Display-padding {
+  margin-top: 0%;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 5%;

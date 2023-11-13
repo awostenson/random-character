@@ -28,6 +28,7 @@ class Display extends React.Component {
           <Tabs 
             value={this.state.tabValue} 
             onChange={(event, newValue) => this.setState({"tabValue": newValue})}
+            variant="scrollable"
             textColor="primary"
             indicatorColor="primary"
           > 

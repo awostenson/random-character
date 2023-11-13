@@ -1,22 +1,27 @@
 import './App.css';
-import './Figurehead';
 import Figurehead from './Figurehead';
 import Display from './Display';
+import Footer from './Footer';
+import Box from '@mui/material/Box';
 
 function App() {
   return (
       <div element class="App">
         <div element class="App-center">
-          <div class="header row App-center">
+          <Box 
+            sx={{ borderRadius: '16px' }} 
+            class="header row App-center"
+          >
             <Figurehead />
-          </div>
+          </Box>
           <div class="body row scroll-y App-center">
             <Display 
             setBackground={changeBackground}
             />
           </div>
-          <div class="footer row App-center">
-          </div>
+          {/* <div class="footer row App-center">
+            <Footer />
+          </div> */}
         </div>
       </div>
   );
