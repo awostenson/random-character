@@ -1,7 +1,7 @@
 import './App.css';
-import Figurehead from './Figurehead';
-import Display from './Display';
-import Footer from './Footer';
+import Figurehead from './Header/Figurehead';
+import Display from './Body/Display';
+//import Footer from './Footer/Footer';
 import Box from '@mui/material/Box';
 
 function App() {

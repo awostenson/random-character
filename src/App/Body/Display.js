@@ -1,13 +1,13 @@
 import React from 'react';
 import './Display.css';
-import './Figurehead.css';
+import '../Header/Figurehead.css';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import GenerateNewButton from './GenerateNewButton.js';
-import backgroundImages from "./data/backgroundImages.json";
+import backgroundImages from '../../data/backgroundImages.json';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { createCharacter } from './CharacterCreationService';
-import { displayCharacter, displayWorld, displayBackstory } from './CharacterDisplayService';
+import { createCharacter } from '../Service/CharacterCreationService';
+import { displayCharacter, displayWorld, displayBackstory } from '../Service/CharacterDisplayService';
 
 class Display extends React.Component {
   constructor(props) {

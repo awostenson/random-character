@@ -1,5 +1,5 @@
-import characteristics from "./data/characteristics.json";
-import personalityTraits from "./data/personalityTraits.json";
+import characteristics from "../../data/characteristics.json";
+import personalityTraits from "../../data/personalityTraits.json";
 
 export function createCharacter() {
   return {
